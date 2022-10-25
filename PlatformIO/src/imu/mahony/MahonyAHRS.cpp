@@ -111,6 +111,10 @@ namespace imu
 			// Declination of SparkFun Electronics (40°05'26.6"N 105°11'05.9"W) is
 			// 	8° 30' E  ± 0° 21' (or 8.5°) on 2016-07-19
 			// - http://www.ngdc.noaa.gov/geomag-web/#declination
+			//
+			// 2022/09/13 Change Tokyo
+			// 7° 48' W  ± 0° 19'  changing by  0° 4' W per year
+			// yaw += 7.6; // -= 8.5 to += 7.6
 			yaw -= 8.5;
 			roll *= RAD_TO_DEG;
 		}

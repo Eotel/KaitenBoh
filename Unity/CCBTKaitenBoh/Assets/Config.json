@@ -1,0 +1,20 @@
+{
+  "targets": [
+    {
+      "uniqueId": "red",
+      "panelColor": "FF6666"
+    },
+    {
+      "uniqueId": "orange",
+      "panelColor": "FFD966"
+    },
+    {
+      "uniqueId": "green",
+      "panelColor": "66FF8C"
+    },
+    {
+      "uniqueId": "blue",
+      "panelColor": "668CFF"
+    }
+  ]
+}

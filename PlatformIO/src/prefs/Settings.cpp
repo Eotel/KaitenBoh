@@ -71,4 +71,15 @@ namespace prefs
         return uniqueId != "default";
     }
 
+    void Settings::writeHostIp(const String &hostIp)
+    {
+        preferences.putString(PrefDataKey_hostIp, hostIp);
+    }
+
+    bool Settings::readHostIp(String &hostIp)
+    {
+        hostIp = preferences.getString(PrefDataKey_hostIp, "192.168.20.50");
+        return hostIp != "192.168.20.50";
+    }
+
 } // prefs

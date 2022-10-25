@@ -10,6 +10,7 @@ namespace prefs
     static const char *PrefDataKey_gyroOffsetY = "gyro_offset_y";
     static const char *PrefDataKey_gyroOffsetZ = "gyro_offset_z";
     static const char *PrefDataKey_uniqueId = "unique_id";
+    static const char *PrefDataKey_hostIp = "host_ip";
 
     class Settings
     {
@@ -23,6 +24,8 @@ namespace prefs
         bool readGyroOffset(float *gyroOffset);
         void writeUniqueId(const String &uniqueId);
         bool readUniqueId(String &uniqueId);
+        void writeHostIp(const String &hostIp);
+        bool readHostIp(String &hostIp);
 
     private:
         Preferences preferences;
